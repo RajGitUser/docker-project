@@ -2,8 +2,9 @@ services:
   mongodb:
     image: mongodb:v1
     container_name: mongodb
+    
 network:
   default:
     driver: bridge
     name: roboshop
-    external: false     # I f network is not created this will create the network. ## if network is already created you should change it as true
+    external: false
